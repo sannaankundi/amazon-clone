@@ -1,88 +1,61 @@
-import React, { useState, useEffect } from "react";
-import "./Payment.css";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
-import { Link, useNavigate } from "react-router-dom";
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { NumericFormat } from "react-number-format";
 import { getBasketTotal } from "./reducer";
-import axios from "./axios";
-import { db } from "./firebase";
-import { collection, doc, setDoc } from "firebase/firestore";
+import { NumericFormat } from "react-number-format";
+import "./Payment.css";
+import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
+import { useNavigate } from "react-router-dom";
+import axios from "./axios"; // Ensure the correct axios instance is imported
 
 function Payment() {
-  const [{ basket, user }, dispatch] = useStateValue();
-  const navigate = useNavigate(); // ✅ Corrected this line
+  const [{ basket, user }] = useStateValue();
 
+  const navigate = useNavigate();
   const stripe = useStripe();
   const elements = useElements();
-
-  const [succeeded, setSucceeded] = useState(false);
-  const [processing, setProcessing] = useState(false); // ✅ Start with false
-  const [error, setError] = useState(null);
-  const [disabled, setDisabled] = useState(true);
-  const [clientSecret, setClientSecret] = useState(""); // ✅ Empty string instead of `true`
-
-  useEffect(() => {
-    // Fetch client secret whenever basket changes
-    const getClientSecret = async () => {
-      try {
-        const response = await axios.post(
-          `/payments/create?total=${getBasketTotal(basket) * 100}`
-        );
-        setClientSecret(response.data.clientSecret);
-      } catch (err) {
-        console.error("Failed to get client secret", err);
-      }
-    };
-
-    if (basket.length > 0) {
-      getClientSecret();
-    }
-  }, [basket]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
 
-    if (!stripe || !elements || !clientSecret) {
-      setProcessing(false);
-      return;
-    }
-
-    const { error, paymentIntent } = await stripe.confirmCardPayment(
-      clientSecret,
-      {
+    const payload = await stripe
+      .confirmCardPayment(clientSecret, {
         payment_method: {
           card: elements.getElement(CardElement),
         },
-      }
-    );
+      })
+      .then(({ paymentIntent }) => {
+        setSucceeded(true);
+        setError(null);
+        setProcessing(false);
 
-    if (error) {
-      setError(error.message);
-      setProcessing(false);
-    } else {
-      // Save order to Firestore
-      await setDoc(doc(db, "users", user?.uid, "orders", paymentIntent.id), {
-        basket: basket,
-        amount: paymentIntent.amount,
-        created: paymentIntent.created,
+        navigate().replace("/orders");
       });
-
-      setSucceeded(true);
-      setError(null);
-      setProcessing(false);
-
-      dispatch({ type: "EMPTY_BASKET" });
-
-      navigate("/orders"); // ✅ Use navigate instead of history.replace
-    }
   };
 
-  const handleChange = (event) => {
-    setDisabled(event.empty);
-    setError(event.error ? event.error.message : "");
+  useEffect(() => {
+    const getClientSecret = async () => {
+      const response = await axios({
+        method: "post",
+        url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+      });
+      setClientSecret(response.data.clientSecret);
+    };
+    getClientSecret();
+  }, [basket]);
+
+  const [paymentMethod, setPaymentMethod] = useState(null);
+  const [succeeded, setSucceeded] = useState(false);
+  const [disabled, setDisabled] = useState(true);
+  const [error, setError] = useState(null);
+  const [processing, setProcessing] = useState("");
+  const [clientSecret, setClientSecret] = useState(true);
+
+  const handleChange = (e) => {
+    setDisabled(e.empty);
+    setError(e.error ? e.error.message : "");
   };
 
   return (
@@ -124,15 +97,13 @@ function Payment() {
           </div>
         </div>
 
-        {/* Payment Method */}
         <div className="payment__section">
           <div className="payment__title">
             <h3>Payment Method</h3>
           </div>
           <div className="payment__details">
             <form onSubmit={handleSubmit}>
-              <CardElement onChange={handleChange} />
-
+              <CardElement onChange={handleChange} />{" "}
               <div className="payment__priceContainer">
                 <h3>
                   Order Total:{" "}
@@ -145,16 +116,12 @@ function Payment() {
                   />
                 </h3>
               </div>
-
               <button
                 type="submit"
                 disabled={processing || disabled || succeeded}
               >
-                {processing ? "Processing..." : "Buy Now"}
+                <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
               </button>
-
-              {/* Show error if exists */}
-              {error && <div>{error}</div>}
             </form>
           </div>
         </div>

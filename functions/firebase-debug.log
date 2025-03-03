@@ -1,0 +1,641 @@
+[debug] [2025-03-03T01:36:54.076Z] ----------------------------------------------------------------------
+[debug] [2025-03-03T01:36:54.081Z] Command:       D:\Installed Programs\Node\node.exe C:\Users\Sannaan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-03-03T01:36:54.082Z] CLI Version:   13.32.0
+[debug] [2025-03-03T01:36:54.082Z] Platform:      win32
+[debug] [2025-03-03T01:36:54.082Z] Node Version:  v22.14.0
+[debug] [2025-03-03T01:36:54.083Z] Time:          Mon Mar 03 2025 06:36:54 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-03-03T01:36:54.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-03T01:36:54.653Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-03T01:36:54.654Z] > authorizing via signed-in user (ahmad.sannaankundi@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting, extensions"}}
+[debug] [2025-03-03T01:36:54.664Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:54.664Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:54.677Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clone-390c7 [none]
+[debug] [2025-03-03T01:36:56.396Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clone-390c7 200
+[debug] [2025-03-03T01:36:56.396Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clone-390c7 {"projectNumber":"490459113908","projectId":"clone-390c7","lifecycleState":"ACTIVE","name":"Amazon Clone","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-16T06:55:38.564339Z"}
+[debug] [2025-03-03T01:36:56.433Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-03T01:36:56.433Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-03T01:36:56.435Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-03-03T01:36:56.452Z] [hub] writing locator at C:\Users\Sannaan\AppData\Local\Temp\hub-clone-390c7.json
+[debug] [2025-03-03T01:36:56.479Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-03-03T01:36:56.505Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-03T01:36:56.506Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-03T01:36:56.506Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-03T01:36:56.506Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-03-03T01:36:56.519Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:36:56.525Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[debug] [2025-03-03T01:36:56.526Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:56.526Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:56.526Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7/adminSdkConfig [none]
+[debug] [2025-03-03T01:36:57.620Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7/adminSdkConfig 200
+[debug] [2025-03-03T01:36:57.620Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7/adminSdkConfig {"projectId":"clone-390c7","storageBucket":"clone-390c7.firebasestorage.app"}
+[debug] [2025-03-03T01:36:57.650Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:57.650Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:57.651Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-390c7/sites 
+[debug] [2025-03-03T01:36:58.806Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-390c7/sites 200
+[debug] [2025-03-03T01:36:58.806Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-390c7/sites {"sites":[{"name":"projects/clone-390c7/sites/clone-390c7","defaultUrl":"https://clone-390c7.web.app","appId":"1:490459113908:web:01fd54ae49b020b9582ae1","type":"DEFAULT_SITE"},{"name":"projects/clone-390c7/sites/clone-azn","defaultUrl":"https://clone-azn.web.app","appId":"1:490459113908:web:c31062cd3faeb51d582ae1","type":"USER_SITE"}]}
+[debug] [2025-03-03T01:36:58.806Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:58.806Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:36:58.807Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7/webApps/1:490459113908:web:01fd54ae49b020b9582ae1/config [none]
+[debug] [2025-03-03T01:37:00.029Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7/webApps/1:490459113908:web:01fd54ae49b020b9582ae1/config 200
+[debug] [2025-03-03T01:37:00.029Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7/webApps/1:490459113908:web:01fd54ae49b020b9582ae1/config {"projectId":"clone-390c7","appId":"1:490459113908:web:01fd54ae49b020b9582ae1","storageBucket":"clone-390c7.firebasestorage.app","apiKey":"AIzaSyDpGHsaC_akmliEz27w6cXjp7oyxmTGce8","authDomain":"clone-390c7.firebaseapp.com","messagingSenderId":"490459113908","measurementId":"G-GK4C8MNGM2"}
+[debug] [2025-03-03T01:37:00.038Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:37:00.039Z] Checked if tokens are valid: true, expires at: 1740968123940
+[debug] [2025-03-03T01:37:00.039Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7 [none]
+[debug] [2025-03-03T01:37:00.631Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7 200
+[debug] [2025-03-03T01:37:00.631Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-390c7 {"projectId":"clone-390c7","projectNumber":"490459113908","displayName":"Amazon Clone","name":"projects/clone-390c7","resources":{"hostingSite":"clone-390c7"},"state":"ACTIVE","etag":"1_7f89f905-9446-4de7-9e60-73f0825ebede"}
+[info] i  hosting[clone-390c7]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-390c7]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-03-03T01:37:00.699Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "D:\Coding Projects\VS Code\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Coding Projects\\VS Code\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2025-03-03T01:37:00.807Z] Validating nodejs source
+[debug] [2025-03-03T01:37:05.166Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:37:05.167Z] Building nodejs source
+[debug] [2025-03-03T01:37:05.167Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:37:05.173Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:37:05.201Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8647
+
+[debug] [2025-03-03T01:37:07.459Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:37:11.532Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:37:11.533Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-390c7/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-390c7/us-central1/api)."}}
+[debug] [2025-03-03T01:37:11.548Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting    │ 127.0.0.1:5000 │ n/a                              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-03-03T01:40:31.234Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:40:31.564Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:40:32.567Z] Validating nodejs source
+[debug] [2025-03-03T01:40:36.922Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:40:36.923Z] Building nodejs source
+[debug] [2025-03-03T01:40:36.924Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:40:36.928Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:40:36.962Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-03T01:40:37.003Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8282
+
+[debug] [2025-03-03T01:40:38.006Z] Validating nodejs source
+[debug] [2025-03-03T01:40:41.761Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:40:41.762Z] Building nodejs source
+[debug] [2025-03-03T01:40:41.762Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:40:41.767Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:40:41.773Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:40:41.811Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8926
+
+[debug] [2025-03-03T01:40:44.692Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:40:45.893Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:40:45.899Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T01:40:48.914Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:40:48.915Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T01:42:53.626Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:42:54.641Z] Validating nodejs source
+[debug] [2025-03-03T01:42:58.942Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:42:58.943Z] Building nodejs source
+[debug] [2025-03-03T01:42:58.943Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:42:58.947Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:42:58.976Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-03T01:42:58.995Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:42:59.430Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8856
+
+[debug] [2025-03-03T01:43:00.445Z] Validating nodejs source
+[debug] [2025-03-03T01:43:04.871Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:43:04.872Z] Building nodejs source
+[debug] [2025-03-03T01:43:04.872Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:43:04.875Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:43:04.879Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:43:04.918Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8292
+
+[debug] [2025-03-03T01:43:07.929Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:43:08.996Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:43:08.997Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T01:43:12.045Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:43:12.046Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T01:44:18.397Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:44:19.415Z] Validating nodejs source
+[debug] [2025-03-03T01:44:26.881Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:44:26.882Z] Building nodejs source
+[debug] [2025-03-03T01:44:26.882Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:44:26.888Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:44:26.923Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-03T01:44:26.962Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:44:27.968Z] Validating nodejs source
+[debug] [2025-03-03T01:44:35.089Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:44:35.089Z] Building nodejs source
+[debug] [2025-03-03T01:44:35.089Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:44:35.093Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:44:35.137Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8286
+
+[info] Serving at port 8395
+
+[debug] [2025-03-03T01:44:39.281Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2025-03-03T01:44:43.340Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:44:43.341Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T01:59:07.117Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:59:08.125Z] Validating nodejs source
+[debug] [2025-03-03T01:59:15.804Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:59:15.805Z] Building nodejs source
+[debug] [2025-03-03T01:59:15.805Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:59:15.810Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:59:15.837Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-03T01:59:15.882Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:59:16.886Z] Validating nodejs source
+[debug] [2025-03-03T01:59:21.381Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:59:21.382Z] Building nodejs source
+[debug] [2025-03-03T01:59:21.382Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:59:21.387Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:59:21.419Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8664
+
+[info] Serving at port 8901
+
+[error] ReferenceError: require is not defined
+    at file:///D:/Coding%20Projects/VS%20Code/amazon-clone/functions/index.js:3:23
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:395:35)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:360:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1385:24)
+    at Module._compile (node:internal/modules/cjs/loader:1536:5)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+
+[debug] [2025-03-03T01:59:23.951Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: require is not defined
+[error] ReferenceError: require is not defined
+    at file:///D:/Coding%20Projects/VS%20Code/amazon-clone/functions/index.js:3:23
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:395:35)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:360:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1385:24)
+    at Module._compile (node:internal/modules/cjs/loader:1536:5)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+
+[debug] [2025-03-03T01:59:24.693Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: require is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-03-03T01:59:34.832Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:59:35.841Z] Validating nodejs source
+[debug] [2025-03-03T01:59:39.814Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:59:39.815Z] Building nodejs source
+[debug] [2025-03-03T01:59:39.815Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:59:39.843Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:59:39.886Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-03T01:59:40.032Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T01:59:41.036Z] Validating nodejs source
+[debug] [2025-03-03T01:59:45.738Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T01:59:45.738Z] Building nodejs source
+[debug] [2025-03-03T01:59:45.738Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T01:59:45.742Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T01:59:45.773Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8454
+
+[info] Serving at port 8203
+
+[debug] [2025-03-03T01:59:47.907Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:59:49.262Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T01:59:52.007Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:59:52.008Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T01:59:53.330Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T01:59:53.331Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T02:03:03.161Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T02:03:04.167Z] Validating nodejs source
+[debug] [2025-03-03T02:03:09.565Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T02:03:09.565Z] Building nodejs source
+[debug] [2025-03-03T02:03:09.566Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T02:03:09.567Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T02:03:09.601Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8382
+
+[debug] [2025-03-03T02:03:14.220Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T02:03:18.332Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T02:03:18.334Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T02:03:32.246Z] File D:\Coding Projects\VS Code\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Coding Projects\\VS Code\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-03-03T02:03:33.251Z] Validating nodejs source
+[debug] [2025-03-03T02:03:37.962Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-03-03T02:03:37.963Z] Building nodejs source
+[debug] [2025-03-03T02:03:37.963Z] Failed to find version of module node: reached end of search path D:\Coding Projects\VS Code\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-03T02:03:37.966Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-03T02:03:38.000Z] Found firebase-functions binary at 'D:\Coding Projects\VS Code\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8965
+
+[debug] [2025-03-03T02:03:41.135Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-03T02:03:50.741Z] defaultcredentials: writing to file C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json
+[debug] [2025-03-03T02:03:50.743Z] Setting GAC to C:\Users\Sannaan\AppData\Roaming\firebase\ahmad_sannaankundi_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Sannaan\\AppData\\Roaming\\firebase\\ahmad_sannaankundi_gmail.com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2025-03-03T02:05:52.950Z] Received signal SIGHUP 1

@@ -1,0 +1,71 @@
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: fit-content;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.checkout_title {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.checkout__left {
+  width: auto;
+}
+
+.checkout__right {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+}
+
+.checkout__right > button {
+  background-color: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.checkout__right > button:hover {
+  background-color: #ddb347;
+}
+
+.checkout__right > h2 {
+  margin-bottom: 10px;
+}
+
+.checkout__right > p {
+  margin-bottom: 10px;
+}
+
+.checkout__right > p > span {
+  font-weight: 800;
+  color: #b12704;
+}
+
+.checkout__right > p > span > a {
+  text-decoration: none;
+  color: #b12704;
+}
+
+.checkout__right > p > span > a:hover {
+  text-decoration: underline;
+}
+
+.checkout__right > p > span > a:active {
+  color: #b12704;
+}
+
+.checkout__right > p > span > a:visited {
+  color: #b12704;
+}

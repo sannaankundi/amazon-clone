@@ -1,0 +1,83 @@
+.checkoutProduct {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.checkoutProduct__info {
+  padding-left: 20px;
+}
+
+.checkoutProduct__info > button {
+  margin-top: 10px;
+}
+
+.checkoutProduct__image {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+}
+
+.checkoutProduct__rating {
+  display: flex;
+}
+
+.checkoutProduct__title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.checkoutProduct__info > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.checkoutProduct__info > button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  width: 180px;
+  height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.checkoutProduct__info > button:hover {
+  background-color: #ddb347;
+}
+
+.checkoutProduct__info > button:active {
+  background-color: #9f7860;
+}
+
+.checkoutProduct__info > button:disabled {
+  background-color: #c7c7c7;
+}
+
+.checkoutProduct__info > button:disabled:hover {
+  background-color: #c7c7c7;
+}
+
+.checkoutProduct__info > button:disabled:active {
+  background-color: #c7c7c7;
+}
+
+.checkoutProduct__info > button:disabled:disabled {
+  background-color: #c7c7c7;
+}
+
+.checkoutProduct__info > button:disabled:disabled:hover {
+  background-color: #c7c7c7;
+}
+
+.checkoutProduct__info > button:disabled:disabled:active {
+  background-color: #c7c7c7;
+}
